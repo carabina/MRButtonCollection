@@ -14,6 +14,8 @@
 		6775D0951F1C8F590029B271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6775D0941F1C8F590029B271 /* Assets.xcassets */; };
 		6775D0981F1C8F590029B271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6775D0961F1C8F590029B271 /* LaunchScreen.storyboard */; };
 		6775D0A01F1C8FB60029B271 /* MRButtonCollection.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6775D09F1F1C8FB60029B271 /* MRButtonCollection.podspec */; };
+		6775D0B11F1CDF650029B271 /* UIButton+BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775D0B01F1CDF650029B271 /* UIButton+BaseClass.m */; };
+		6775D0B41F1CE0600029B271 /* UIButton+InteractionHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775D0B31F1CE0600029B271 /* UIButton+InteractionHUD.m */; };
 		E220401C8973398B068B0340 /* libPods-MRButtonCollection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA60D2E24604FE7E43BD6E6 /* libPods-MRButtonCollection.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,10 @@
 		6775D0971F1C8F590029B271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6775D0991F1C8F590029B271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6775D09F1F1C8FB60029B271 /* MRButtonCollection.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MRButtonCollection.podspec; sourceTree = "<group>"; };
+		6775D0AF1F1CDF650029B271 /* UIButton+BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BaseClass.h"; sourceTree = "<group>"; };
+		6775D0B01F1CDF650029B271 /* UIButton+BaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BaseClass.m"; sourceTree = "<group>"; };
+		6775D0B21F1CE0600029B271 /* UIButton+InteractionHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+InteractionHUD.h"; sourceTree = "<group>"; };
+		6775D0B31F1CE0600029B271 /* UIButton+InteractionHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+InteractionHUD.m"; sourceTree = "<group>"; };
 		6FA60D2E24604FE7E43BD6E6 /* libPods-MRButtonCollection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRButtonCollection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37DF21224B19ADF74B8CBA8 /* Pods-MRButtonCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRButtonCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRButtonCollection/Pods-MRButtonCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				6775D09F1F1C8FB60029B271 /* MRButtonCollection.podspec */,
+				6775D0AE1F1CDF530029B271 /* Classes */,
 				6775D0871F1C8F590029B271 /* MRButtonCollection */,
 				6775D0861F1C8F590029B271 /* Products */,
 				9267E55E9A5DB88D529C49AE /* Pods */,
@@ -87,6 +94,17 @@
 				6775D0891F1C8F590029B271 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6775D0AE1F1CDF530029B271 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6775D0AF1F1CDF650029B271 /* UIButton+BaseClass.h */,
+				6775D0B01F1CDF650029B271 /* UIButton+BaseClass.m */,
+				6775D0B21F1CE0600029B271 /* UIButton+InteractionHUD.h */,
+				6775D0B31F1CE0600029B271 /* UIButton+InteractionHUD.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7F69A5C23C5C2C7145F954D6 /* Frameworks */ = {
@@ -230,7 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6775D0B41F1CE0600029B271 /* UIButton+InteractionHUD.m in Sources */,
 				6775D0901F1C8F590029B271 /* ViewController.m in Sources */,
+				6775D0B11F1CDF650029B271 /* UIButton+BaseClass.m in Sources */,
 				6775D08D1F1C8F590029B271 /* AppDelegate.m in Sources */,
 				6775D08A1F1C8F590029B271 /* main.m in Sources */,
 			);
@@ -355,6 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4HXKSPK349;
 				INFOPLIST_FILE = MRButtonCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrxir.MRButtonCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4HXKSPK349;
 				INFOPLIST_FILE = MRButtonCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrxir.MRButtonCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
